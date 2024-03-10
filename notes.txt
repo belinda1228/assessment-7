@@ -1,0 +1,37 @@
+Timing Information:
+-------------------
+
+Extra Large Array
+-----------------
+Time to run code with push(): 3.1051 ms
+Time to run code with unshift(): 1.3389458 s
+
+Large Array
+-----------
+Time to run code with push(): 1.6103 ms
+Time to run code with unshift(): 11.1575 ms
+
+Medium Array
+------------
+Time to run code with push(): 166.6 μs
+Time to run code with unshift(): 222.7 μs
+
+Small Array
+-----------
+Time to run code with push(): 162.5 μs
+Time to run code with unshift(): 81.3 μs
+
+Tiny Array
+----------
+Time to run code with push(): 110 μs
+Time to run code with unshift(): 42.2 μs
+
+The push function scales better and performs better in terms of 
+amount of time it consumed. Amount of time doubled when push function is 
+used when the input is 10 times larger; whereas, function unshift 
+consumered more than double amount of time when the input is 10 times larger.
+This is being observed based on how each function generates end result.
+
+The reason why the function unshift is a lot slower than the function push
+is that when push is performed, operating time is constant 1; whereas, when unshift 
+is performed, operating time is not constant but it's amount of numbers already in the array
